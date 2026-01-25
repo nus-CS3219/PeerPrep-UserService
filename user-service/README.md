@@ -3,6 +3,9 @@
 ## Setting-up
 
 > 📝 Note: If you are familiar with MongoDB and wish to use a local instance, please feel free to do so via the **[MongoDB Community Edition](https://www.mongodb.com/docs/manual/administration/install-community/)**. This guide utilizes MongoDB Cloud Services.
+>
+> ⚠️ Important Network Notice: MongoDB Atlas connections are blocked on the NUS network. If you are using MongoDB Atlas, you must disconnect from the NUS network (including NUS Wi-Fi or nVPN) and connect using an alternative network. Otherwise, your application will fail to connect to the database even if your connection string is correct.
+
 
 1. Set up a MongoDB Cluster by following the steps in this **[guide](./MongoDBSetup.md)**.
 
@@ -29,7 +32,7 @@
 
 ## Running User Service
 
-> 📝 Note: Ensure you have **[Node.js (LTS)](https://nodejs.org/en/download)** installed. At the time of writing, the latest LTS version is `v24.13.0`.
+> 📝 Note: Ensure you have **[Node.js (LTS)](https://nodejs.org/en/download)** installed. At the time of writing, the latest LTS version is `v24.13.0`. Select your operating system, package manager, and Node.js version from the dropdowns at the top of the [page]((https://nodejs.org/en/download)), then follow the provided instructions.
 
 1. Open Command Line/Terminal and navigate into the `user-service` directory.
 
