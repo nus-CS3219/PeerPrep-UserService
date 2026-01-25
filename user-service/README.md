@@ -2,7 +2,7 @@
 
 ## Setting-up
 
-> 📝 Note: If you are familiar to MongoDB and wish to use a local instance, please feel free to do so. This guide utilizes MongoDB Cloud Services.
+> 📝 Note: If you are familiar with MongoDB and wish to use a local instance, please feel free to do so via the **[MongoDB Community Edition](https://www.mongodb.com/docs/manual/administration/install-community/)**. This guide utilizes MongoDB Cloud Services.
 
 1. Set up a MongoDB Cluster by following the steps in this **[guide](./MongoDBSetup.md)**.
 
@@ -28,6 +28,8 @@
 > ⚠️ Warning: If the password contains special characters, make sure to URL-encode them before placing them in the connection string. For example, if your password is `P@ssword`, you should replace `@` with `%40`, resulting in `P%40ssword`.
 
 ## Running User Service
+
+> 📝 Note: Ensure you have **[Node.js (LTS)](https://nodejs.org/en/download)** installed. At the time of writing, the latest LTS version is `v24.13.0`.
 
 1. Open Command Line/Terminal and navigate into the `user-service` directory.
 
