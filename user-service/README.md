@@ -4,8 +4,7 @@
 
 > 📝 Note: If you are familiar with MongoDB and wish to use a local instance, please feel free to do so via the **[MongoDB Community Edition](https://www.mongodb.com/docs/manual/administration/install-community/)**. This guide utilizes MongoDB Cloud Services.
 >
-> ⚠️ Important Network Notice: MongoDB Atlas connections are blocked on the NUS network. If you are using MongoDB Atlas, you must disconnect from the NUS network (including NUS Wi-Fi or nVPN) and connect using an alternative network. Otherwise, your application will fail to connect to the database even if your connection string is correct.
-
+> ⚠️ Important Network Notice: MongoDB Atlas connections are blocked on the NUS network. If you are using MongoDB Atlas, you must disconnect from the NUS network (including NUS Wi-Fi or nVPN) and connect using an alternative network such as phone hotspot. Otherwise, your application will fail to connect to the database even if your connection string is correct.
 
 1. Set up a MongoDB Cluster by following the steps in this **[guide](./MongoDBSetup.md)**.
 
@@ -92,7 +91,7 @@
 
 ### Login
 
-- This endpoint allows a user to authenticate with an email and password and returns a JWT access token. The token is valid for 1 day and can be used subsequently to access protected resources. For example usage, refer to the [Authorization header section in the Get User endpoint](#auth-header).
+- This endpoint allows a user to authenticate with an email and password and returns a JWT access token. The token is valid for 1 day and can be used subsequently to access protected resources. For the example usage, refer to the [Authorization header section in the Get User endpoint](#auth-header).
 - HTTP Method: `POST`
 - Endpoint: <http://localhost:3001/auth/login>
 - Body
@@ -134,13 +133,13 @@
 
 > You may need to manually assign admin status to the first user by directly editing the database document before using this endpoint.
 >
->To do this on Atlas, navigate to **Database > Data Explorer > cluster_name > test > usermodels**
+> To do this on Atlas, navigate to **Database > Data Explorer > cluster_name > test > usermodels**
 >
->![alt text](./GuideAssets/AdminUser.png)
+> ![alt text](./GuideAssets/AdminUser.png)
 >
->Find the user document, and set the `isAdmin` field to `true`.
+> Find the user document, and set the `isAdmin` field to `true`.
 >
->![alt text](./GuideAssets/SetAdmin.png)
+> ![alt text](./GuideAssets/SetAdmin.png)
 
 - This endpoint allows updating a user’s privilege, i.e., promoting or demoting them from admin status.
 
